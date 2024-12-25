@@ -1,5 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        WindowGame windowGame = new WindowGame(); //создаем новый обьект типа и поведения класса ОкноИгры
+        WindowGame windowGame = new WindowGame(); // створюємо новий об'єкт типу та поведінки класу ВікноІгри
     }
 }
