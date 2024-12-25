@@ -1,16 +1,14 @@
 import javax.swing.*;
 
-public class WindowGame extends JFrame { //создаем класс ОкноИгры унаследованный от класса-родителя JFrame (родитель
-    //для классов, которые выступают в качестве ОКОН)
-    public WindowGame() { //конструктор класса
-        setTitle("SnakeGame"); //устанавливаем название игры
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); //устанавливаем значек "закрытие игры"
+public class WindowGame extends JFrame { //створюємо клас WindowGame, який успадкований від батьківського класу JFrame (батьківський клас для вікон)
+    public WindowGame() { //конструктор класу
+        setTitle("SnakeGame"); //встановлюємо назву гри
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); //встановлюємо дію для кнопки закриття вікна гри
 
-        setSize(336, 359); //устанавливаем размер ОКНА в пикселях
-        setLocation(500, 200); //спавнимся - устанавливаем место позиционирования игрового окна относительно монитора
-        //setLocationRelativeTo(null); //можно спавнится по середине экрана
-        add(new FieldGame()); //осуществляем привязку компонента класса FieldGame() к нашему игровому окну
-        setVisible(true); //метод с флагом true - отображает наше игровое окно на экране ПК, флаг false - делает его
-        //невидимым
+        setSize(336, 359); //встановлюємо розмір вікна в пікселях
+        setLocation(500, 200); //встановлюємо позицію вікна відносно екрана
+        //setLocationRelativeTo(null); //можна встановити вікно по центру екрану
+        add(new FieldGame()); //додаємо компонент класу FieldGame() до нашого ігрового вікна
+        setVisible(true); //метод з параметром true відображає ігрове вікно на екрані ПК, false робить його невидимим
     }
 }
